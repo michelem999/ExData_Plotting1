@@ -30,4 +30,5 @@ dev.copy(png, file = "plot1.png")
 ## Close the PNG device
 dev.off()  
 
+##############################
 
