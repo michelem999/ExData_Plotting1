@@ -25,6 +25,9 @@ Sys.setlocale("LC_TIME","English United States")
 
 par(mfrow = c(2, 2))
 
+## Set the backgroud as white for the graphic device
+par(bg="white")
+
 ############
 ## Plot 4.1
 ############
@@ -50,7 +53,7 @@ lines(initialFebr0102$Time,initialFebr0102$Sub_metering_3, type="l", col="blue")
 
 ## Add the legend for the three series  
 ###legend("topright",cex=0.8, lty=1,legend=c(expression(bold("Sub_metering_1")), expression(bold("Sub_metering_2")), "Sub_metering_3"), col=c("black", "red", "blue"))
-legend("topright",cex=.8, box.lty=0, lty=1,legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"))
+legend("topright", bty="n", cex=.7, box.lty=0, lty=1,legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"))
 
 ############
 ## Plot 4.4

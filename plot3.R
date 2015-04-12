@@ -25,6 +25,8 @@ Sys.setlocale("LC_TIME","English United States")
 ## Reset the plotting device layout to default: (1,1)
 par(mfrow = c(1, 1))
 
+## Set the backgroud as white for the graphic device
+par(bg="white")
 
 ## Plot the 1st serie on the graphics: Colum 'initialFebr0102$Sub_metering_1' against column 'initialFebr0102$Time'
 plot(initialFebr0102$Time, initialFebr0102$Sub_metering_1, type="l",cex.lab=.8, font.lab=2, cex.main=1, cex.axis=.8, font.axis=2 ,xlab="", ylab="Energy sub metering")

@@ -21,6 +21,9 @@ initialFebr0102[,3:9] = apply(initialFebr0102[,3:9], 2, function(x) as.numeric(a
 ## Reset the plotting device layout to default: (1,1)
 par(mfrow = c(1, 1))
 
+## Set the backgroud as white for the graphic device
+par(bg="white")
+ 
 ## Plot the histogram (PLOT 1): Frequency of colum 'initialFebr0102$Global_active_power' 
 hist(initialFebr0102$Global_active_power, cex.lab=.8, font.lab=2, cex.main=1, cex.axis=.8, font.axis=2, ylim=c(0,1200), col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 
